@@ -61,7 +61,6 @@ session_start();?>
         </div>
 </div>
 
- 
 
 <?php 
 //Gọi file connection.php ở bài trước

@@ -61,9 +61,6 @@
         </div>
 </div>
 
-
-
-
 <?php
 	if (isset($_POST["btn_submit"])) {
 		//lấy thông tin từ các form bằng phương thức POST

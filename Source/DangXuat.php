@@ -4,3 +4,4 @@ session_destroy();
 header("location:TrangChu.php");
 exit();
 ?>
+
