@@ -1,0 +1,79 @@
+.Khung{
+    float: left;
+    width: 220px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border: #CCC solid 1px;
+}
+.KhungP{
+    float: left;
+    width: 310px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border: #CCC solid 1px;
+}
+.trang{
+    border: #CCC solid 1px;
+}
+
+.head{
+
+    background: #333;
+    
+    text-align: 20px;
+    line-height: 50px;
+    color: white;
+    
+}
+.img1{
+   
+
+        display: block;
+       
+        margin-left: auto;
+       
+        margin-right: auto;
+       height: 400px;
+       width: 700px;
+}
+
+.KhungDanhSach{
+  
+        float: left;
+        width: 250px;
+        height: 120px;
+        margin: 5px;
+        padding: 5px;
+        border: #CCC solid 1px;
+}
+.NenDanhSach{
+
+        background-color: #eee;
+        margin-left: 25px;
+        margin-right: 15px;
+        height: 1400px;
+        padding: 20px;
+        margin-bottom: 25px;
+          
+        
+}
+
+.cmt img{
+float: left;
+border:1px solid #CCC;
+padding: 2px;
+}
+
+.mess{
+   
+    margin-left: 10px;
+}
+.showcmt{
+    margin-top: 20px;
+}
+.cmt{
+    margin-bottom: 5px;
+}
+
