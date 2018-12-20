@@ -1,7 +1,7 @@
 <?php
 
 if($_FILES["userfile"]["error"]>0){
-    echo "File chưa được chọn hoặc kích thước file quá 2MB";
+    echo "File chưa được chọn hoặc kích thước file quá 2MB"; // kích cỡ file
 }
 else{
     if($_FILES["userfile"]["type"]!= "image/jpeg" && $_FILES["userfile"]["type"]!= "image/png"){
