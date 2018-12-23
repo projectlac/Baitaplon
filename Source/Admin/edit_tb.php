@@ -21,23 +21,21 @@ $mt1=$_POST["txtmt1"];
 $nt2=$_POST["txtnoita2"];
 $mt2=$_POST["txtmt2"];
 
+if($tb==""||$gia==""||$mt==""||$nt1==""||$mt1==""||$nt2==""||$mt2==""){echo "<h2 class='head2'>Bạn vui lòng điền đầy đủ thông tin. </br><a href='javascript: history.go(-1)'>Trở lại</a></h2>";}
+else{
+$sql="UPDATE `vukhi` SET `name`='$tb',`mota`='$mt',`loai`='$loai',`gia`='$gia',`name_noitai1`='$nt1',`noitai1`='$mt1',`name_noitai2`='$nt2',`noitai2`='$mt2',`image`='$img' Where w_id=$id";
 
-
-	$sql="UPDATE vukhi SET name=$tb,mota=$mt,loat=$loai,gia=$gia,name_noitai1=$nt1,noitai1=$mt1,name_noitai2=$nt2,noitai2=$mt2,image=$img Where w_id=$id";
-
-	mysqli_query($conn,$sql);
-
+$result=mysqli_query($conn,$sql);
 	echo "<h2 class='head2'> Bạn đã cập nhật trang bị thành công. </br><a href='javascript: history.go(-1)'>Trở lại</a></h2>";
-
-
+}
+move_uploaded_file($_FILES["image"]["tmp_name"],"../img/w1/".$_FILES["image"]["name"]);
 
 mysqli_close($conn);
 
-
-//xử lý ảnh up
-move_uploaded_file($_FILES["image"]["tmp_name"],"../img/w1/".$_FILES["image"]["name"]);
-
 }
+//xử lý ảnh up
+
+
 include("include/connection.php");
 	$sql1="SELECT w_id, name, mota, loai, gia, name_noitai1, noitai1, name_noitai2, noitai2, image FROM vukhi WHERE w_id='$id'";
 	$result=mysqli_query($conn,$sql1);

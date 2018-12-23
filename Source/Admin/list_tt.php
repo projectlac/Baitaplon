@@ -40,7 +40,7 @@ while($data= mysqli_fetch_array($result))
            echo  "<tr>";
            echo  "<td>$stt</td>";
            echo  "<td>$data[name]</td>";
-           echo  "<td><a href='#'>Edit</a></td>";
+           echo  "<td><a href='edit_tt.php?id=$data[id]'>Edit</a></td>";
            echo  "<td><a href='del_tt.php?id=$data[id]' onclick='return xacnhan();'>Delete</a></td>";
            echo  "</tr>";
  

@@ -26,8 +26,8 @@ while($data= mysqli_fetch_array($result))
                 echo"<td>$data[username]</td>";
                 echo"<td>$data[email]</td>";
                 if($data['permision']==2){
-                echo"<td>Admin</td>"    ;} 
-                else {echo"<td>Thành Viên</td>"; } 
+                echo"<td><a href='level_user.php?id=$data[id]'>Admin</a></td>"    ;} 
+                else {echo"<td><a href='level_user.php?id=$data[id]'>Thành Viên<a/></td>"; } 
                 echo"<td><a href='del_user.php?id=$data[id]' onclick='return xacnhan();'>Delete</a></td>";
                 echo"</tr>  "; 
 $stt++;
