@@ -61,6 +61,7 @@ session_start();?>
         </div>
 </div>
 
+ 
 
 <?php 
 //Gọi file connection.php ở bài trước
@@ -69,7 +70,7 @@ require_once("Include/connection.php");
 if (isset($_POST["btn_submit"])) {
 	// lấy thông tin người dùng
 	$username = $_POST["username"];
-	$password = $_POST["password"];
+	$password = md5($_POST["password"]);
 	//làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt 
 	//mà người dùng cố tình thêm vào để tấn công theo phương thức sql injection
 	$username = strip_tags($username);

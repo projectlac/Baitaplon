@@ -61,14 +61,17 @@
         </div>
 </div>
 
+
+
+
 <?php
 	if (isset($_POST["btn_submit"])) {
 		//lấy thông tin từ các form bằng phương thức POST
 		$username = $_POST["username"];
-		$password = $_POST["pass"];
+		$password = md5($_POST["pass"]);
 		$name = $_POST["name"];
 		$email = $_POST["email"];
-		$pass2 =$_POST["pass2"];
+		$pass2 =md5($_POST["pass2"]);
 		//Kiểm tra điều kiện bắt buộc đối với các field không được bỏ trống
 
 		if ($username == "" || $password == "" || $name == "" || $email == "") {
