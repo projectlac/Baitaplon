@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 19, 2018 lúc 12:28 PM
+-- Thời gian đã tạo: Th1 03, 2019 lúc 08:30 AM
 -- Phiên bản máy phục vụ: 10.1.36-MariaDB
 -- Phiên bản PHP: 7.2.11
 
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `db_ web`
+-- Cơ sở dữ liệu: `db_web`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng ` admin`
+-- Cấu trúc bảng cho bảng `admin`
 --
 
 CREATE TABLE `admin` (
@@ -66,7 +66,7 @@ CREATE TABLE `cmt` (
 --
 
 INSERT INTO `cmt` (`cmt_id`, `name`, `cmt`, `time`, `check1`, `news_id`) VALUES
-(3, 'Tuyến', 'Chồng của Tưu kìa', '2018-12-16 09:03:54', 'N', 3),
+(3, 'Tuyến', 'Chồng của Tưu kìa', '2018-12-16 09:03:54', 'Y', 3),
 (4, 'Vô Hạn', 'Tuyến Hế Lô', '2018-12-16 11:03:17', 'N', 3),
 (5, 'Vo', 'A~', '2018-12-16 11:09:46', 'N', 3),
 (6, 'Tuyến', 'Đao xẹc cỳ', '2018-12-16 11:10:51', 'N', 7),
@@ -74,7 +74,8 @@ INSERT INTO `cmt` (`cmt_id`, `name`, `cmt`, `time`, `check1`, `news_id`) VALUES
 (8, 'a', 'a', '2018-12-16 11:28:25', 'N', 3),
 (9, 'CCa', 'Cẩu', '2018-12-16 19:19:57', 'N', 6),
 (10, 'Tửu', 'Tưyr', '2018-12-16 19:20:19', 'N', 4),
-(11, 'A', 'A', '2018-12-16 19:20:26', 'N', 4);
+(11, 'A', 'A', '2018-12-16 19:20:26', 'N', 4),
+(12, 'Ưng Cung', 'Con gái Bỉ của t', '2018-12-21 08:03:40', 'N', 20);
 
 -- --------------------------------------------------------
 
@@ -202,7 +203,9 @@ INSERT INTO `thucthan` (`id`, `name`, `truyenthuyet`, `noitai`, `skill1`, `skill
 (4, 'Tửu Thôn Đồng Tử', 'Tửu thôn đồng tử một vị tướng đấu sĩ mang phẩm chất SSR thương xuyên xuất hiện trong game với vai trò đấu sĩ dạng cấu rỉa/ áp chế', 'Shuten Doji có cơ hội nhận được một điểm điên cuồng khi tấn công hoặc bị tấn công. Nhận được 1 điểm khi sử dụng kỹ năng lên thức thần địch. Khi đủ 4 điểm điên cuồng anh ta rơi vào trạng thái cuồng nộ. Kỹ năng Cuồng Khiếu và Quỷ Quyền nhận thêm hiệu ứng.', '\r\nHồi lại 25(+40%AD) HP cho Shuten Doji. Đồng thời cường hóa 2 đòn\r\nđánh thường tiếp theo gây thêm 15(+30%AD) sát thương vật lý và tăng\r\nphạm vi lên 50.\r\nTrong trạng thái cuồng nộ, hồi 50(+70% AD) HP và cường hóa 3 đòn\r\nđánh thường tiếp theo gây thêm 30(+40AD) sát thương vật lý đồng thời\r\nlàm giảm 30% tốc độ di chuyển.', '\r\nShuten Doji đấm một đấm về phía trước, gây thêm 15 (+130% AD)\r\nsát thương vật lý.\r\nTrong trạng thái Cuồng Nộ, Quỷ Quyền sẽ ném ra sau một khoảng thời\r\ngian ngắn, gây 25(+200AD) sát thương vật lý đồng thời tăng xuyên giáp\r\ntrong 4s.', '\r\nShuten Doji lùi lại và hút về phía trước, gây 75(+60%AD) sát thương vật\r\nlý đồng thời hất tung mục tiêu trong phạm vi.', '\r\nShuten Doji vào trạng thái Quỷ Vương, tăng giới hạn máu lên 375. Triệu\r\nhồi Quỷ Hồ Lô hỗ trợ tấn công, mỗi đòn đánh của Quỷ Hồ Lô gây\r\n80(+10% AD) sát thương phép.\r\nHiệu ứng tồn tại 12s, mỗi điểm cuồng khí tăng duy trì 2s.', 'Cuồng Khiếu', 'Quỷ Quyền', 'Hung Hăng', 'Quỷ Vương Giáng Lâm', 'Cuồng Khí', '4.jpg', 'noitai.png', 'skill1.png', 'skill2.png', 'skill3.png', 'skill4.png', 'img.jpg'),
 (6, 'Đại Thiên Cẩu', 'Đại Thiên Cẩu, chắc chắn rồi đây là thức thần được nhiều bạn lựa chọn nhất khi nhận quà miễn phí 7 ngày đăng nhập. Đầu game Ootengu có vẻ thua thiệt hơn các vị tướng phép khác vị lượng sát thương và khống chế đơn mục tiêu khiến anh khó tránh khỏi những pha rượt đuổi khi đảo đường. Nhưng khi Late game hoặc combat tổng Đại thiên cẩu luôn cho đồng đội thấy được sức mạnh của vị thức thần mang trong mình sức mạnh bão tố.', '\r\nMỗi lần Ootengu sử dụng kỹ năng lên mục tiêu là thức thần, 1 sợi lông sẽ gắn lên người mục tiêu. Mỗi sợi lông sẽ gây thêm 5% sát thương phép của anh ta lên mục tiêu duy trì 8s. Khi đủ 3 sợi lông mục tiêu sẽ chịu 22(+15*Level) (+30%Ap) sát thương phép và bị làm chậm. Đồng thời giảm 20% kháng phép của mục tiêu.', 'Nội tại: tăng vĩnh viễn 12 Ap cho Ootengu.Nếu bản thân không bị tấn công trong 24 giây sẽ tạo cho Ootengu một lớp khiên xóa bỏ một kỹ năng tiếp theo lên anh ta. Đồng thời tăng 20% tốc độ di chuyển khi khiên vỡ.', ' Ootengu bắn một làn thi vũ về phía trước gây 120(+55% AP) sát thương phép lên mục tiêu trúng phải. Nếu mục tiêu là Thức Thần phe địch thi vũ sẽ tạo một vòng tròn dưới chân địch, sau một thời gian ngắn vòng tròn phát nổ gây thêm một lần 40(+15% Ap) sát thương phép trong phạm vi.', '\r\nOotengu thổi một ngọn lốc nhỏ về phía mục tiêu, gây 60(+40% AP)sát thương phép đồng thời hất tung mục tiêu và kẻ địch lân cận lên không trung trong 0.5s.', '\r\nOotengu tạo ra một cơn lốc gây 90(+35% AP) sát thương phép liên tục mỗi 0.5s lên một vùng chỉ định trong 3s. đồng thời làm chậm tất cả mục tiêu trúng phải. Cơn bão sẽ dẫn mở rộng và di chuyển về phía trước', 'Vô Giải Chi Vực', 'Thi Vũ', 'Tật phong chú', 'Bạo phong vũ', 'Đạo Thiên cẩu', '6.jpg', 'noitai2.png', 'skill12.png', 'skill22.png', 'skill32.png', 'skill42.png', 'img2.jpg'),
 (7, 'Yêu Đao Cơ', 'Yêu Đao Cơ là đấu sĩ đường trên cũng như là một vị tướng đi rừng vô cùng mạnh mẽ.', 'Nội tại: khi Yêu Đao Cơ gây sát thương có 20% cơ hội gây thêm 40% sát thương vật lý lên mục tiêu. Nếu Yêu Đao Cơ tấn công liên tục cùng một thức thần 3 lần trong 4s sẽ tăng 15% tốc độ chạy và 50% miễn làm chậm trong 3s.', 'Yêu Đao Cơ tiến vào trạng thái Tàn Tâm, trong 0,8s trở nên bất khả chiến bại, nếu Yêu Đao Cơ đỡ được một kỹ năng khống chế sẽ phản đòn gây 120(+100% AP) sát thương phép đồng thời làm choáng mục tiêu. Nội tại:Yêu Đao Cơ hồi lại 30(+40% AD) HP sau 2 đòn đánh.', ' Yêu Đao Cơ lập tức tăng 20% tốc độ đánh trong 5s sau khi sử dụng. 3 đòn đánh tiếp theo chỉ gây ra 60% sát thương đòn đánh thường. Nhưng mỗi lần gây thêm 10(+10% AD) sát thương vật lý. Đòn đánh đầu tiên gây ra 10% làm chậm trong 1s. Nội tại: tăng vĩnh viễn 10 AD cho Yêu Đao Cơ.', ' Yêu Đao Cơ lướt về phía trước gây 90 (+80%AD) sát thương vật lý. Nếu kỹ năng tiêu diệt mục tiêu sẽ hồi lại ngay lập tức đồng thời hồi lại 35 MP.', 'Yêu Đao Cơ tấn công vào mục tiêu chỉ định, chém liên tục nhiều lần lên mục tiêu và thức thần xung quanh mỗi lần gây 140(+ 80% AD) sát thương vật lý. Tối đa 6 lần tấn công, đòn tấn công lên cùng 1 mục tiêu chỉ gây 40% sát thương.', 'Tàn Tâm', 'Phệ Ma', 'Đao Tập', 'Họa Đao', 'Chiến Ý', '7.jpg', 'noitai3.png', 'skill13.png', 'skill23.png', 'skill33.png', 'skill43.png', 'img3.jpg'),
-(19, 'Hoang', 'Hoang một vị pháp sư toàn diện về mọi mặt có khả năng cơ động lẫn khống chế bên cạnh đó lượng sát thương của anh ta cực \"dầy\" khi tham gia combat.', 'Mỗi kỹ năng của Susabi trúng thức thần địch sẽ tích lũy 1 viên\r\nthiên thể năng lượng khi đủ 5 viên thiên thể sẽ tạo cho anh ta một\r\nlớp khiên kéo dài 3s. Nếu không có viên thiên thể mới nào trong\r\nvòng 15s, những viên cũ sẽ tự động tiêu tan.', 'Susabi triệu hồi 3 viên tinh thể tấn công liên tiếp lên phạm vi\r\nchỉ định, mỗi viên gây  45(+30% AP) sát thương phép lên kẻ địch\r\ntrúng chiêu. Mỗi tinh thể trúng mục tiêu sẽ mang lại cho anh ta 1\r\ntinh thể.', 'Susabi ném ra một chuỗi thiên thể về phía trước gây 75 (+40% AP)\r\nsát thương phép thuật đồng thời làm choáng 1,5s lên kẻ địch đầu\r\ntiên trúng phải và mang lại cho anh ta 1 viên thiên thể. ', 'Susabi lướt về phía chỉ định, triệu hồi 2 tinh thể tấn công kẻ địch\r\ngần đó. Mỗi tinh thể gây 45 (+30%AP) sát thương phép và để lại\r\ncho anh ta 1 thiên thể.', 'Susabi tạo một thể ước với thần thánh, triệu hồi một cơn mưa thiên\r\nthể liên tục rơi xuống kẻ địch trong phạm vi ảnh hưởng. Mỗi viên gây\r\n90(+25%Ap) sát thương phép, và mỗi kẻ địch chỉ nhận tối đa (3 + số\r\nthiên thể hiện tại) lần sát thương.\r\n\r\nNếu thiên phạt được triệu hồi với 5 thiên thể trong người những\r\nngôi sao sẽ tăng gấp đôi tốc độ rơi đồng thời giảm 30% tốc độ\r\ndi chuyển của kẻ địch trúng phải.', 'Viên tinh Quang', 'Tinh Nguyệt Tỏa Liên', 'Đẩu Chuyển Tinh Di', 'Tinh Nguyệt Thiên Phạt', 'Tinh nguyệt', '283skin1.jpg', 'tinh-nguyet.png', 'vien-tinh-quang.png', 'tinh-nguyet-toa-lien.png', 'dau-chuyen-tinh-di.png', 'tinh-nguyet-thien-phat.png', 'Onmyoji-Arena-Susabi-Overview.png');
+(19, 'Hoang', 'Hoang một vị pháp sư toàn diện về mọi mặt có khả năng cơ động lẫn khống chế bên cạnh đó lượng sát thương của anh ta cực \"dầy\" khi tham gia combat.', 'Mỗi kỹ năng của Susabi trúng thức thần địch sẽ tích lũy 1 viên\r\nthiên thể năng lượng khi đủ 5 viên thiên thể sẽ tạo cho anh ta một\r\nlớp khiên kéo dài 3s. Nếu không có viên thiên thể mới nào trong\r\nvòng 15s, những viên cũ sẽ tự động tiêu tan.', 'Susabi triệu hồi 3 viên tinh thể tấn công liên tiếp lên phạm vi\r\nchỉ định, mỗi viên gây  45(+30% AP) sát thương phép lên kẻ địch\r\ntrúng chiêu. Mỗi tinh thể trúng mục tiêu sẽ mang lại cho anh ta 1\r\ntinh thể.', 'Susabi ném ra một chuỗi thiên thể về phía trước gây 75 (+40% AP)\r\nsát thương phép thuật đồng thời làm choáng 1,5s lên kẻ địch đầu\r\ntiên trúng phải và mang lại cho anh ta 1 viên thiên thể. ', 'Susabi lướt về phía chỉ định, triệu hồi 2 tinh thể tấn công kẻ địch\r\ngần đó. Mỗi tinh thể gây 45 (+30%AP) sát thương phép và để lại\r\ncho anh ta 1 thiên thể.', 'Susabi tạo một thể ước với thần thánh, triệu hồi một cơn mưa thiên\r\nthể liên tục rơi xuống kẻ địch trong phạm vi ảnh hưởng. Mỗi viên gây\r\n90(+25%Ap) sát thương phép, và mỗi kẻ địch chỉ nhận tối đa (3 + số\r\nthiên thể hiện tại) lần sát thương.\r\n\r\nNếu thiên phạt được triệu hồi với 5 thiên thể trong người những\r\nngôi sao sẽ tăng gấp đôi tốc độ rơi đồng thời giảm 30% tốc độ\r\ndi chuyển của kẻ địch trúng phải.', 'Viên tinh Quang', 'Tinh Nguyệt Tỏa Liên', 'Đẩu Chuyển Tinh Di', 'Tinh Nguyệt Thiên Phạt', 'Tinh nguyệt', '283skin1.jpg', 'tinh-nguyet.png', 'vien-tinh-quang.png', 'tinh-nguyet-toa-lien.png', 'dau-chuyen-tinh-di.png', 'tinh-nguyet-thien-phat.png', 'Onmyoji-Arena-Susabi-Overview.png'),
+(20, 'Hoa Bỉ Ngạn', 'Bỉ Ngạn Hoa higanbana là một thức thần cấp bậc SSR tượng trưng cho sức  mạnh áp đảo kẻ địch, trong Âm Dương Sư moba Bỉ Ngạn là một pháp sư trụ đường tuyệt vời với khả năng hồi phục và sát thương tốt.', 'Trong 4s không bị tấng công, Bỉ Ngạn Hoa sẽ nhận được 15% tốc độ di chuyển', 'Kỹ năng trúng mục tiêu sẽ hồi lại cho Bỉ Ngạn Hoa một lượng máu bằng 60(+\r\n50% AP)', 'Bắn ra 2 bông hoa tử thần về hướng chỉ định gây 130(+60% AP) sát thương\r\nphép trên đường đi', 'Bỉ Ngạn phóng ra một hạt giống về phía trước gây sát thương lên kẻ địch gây\r\n110(+55% AP) sát thương phép, kết thúc đường đi hạt giống sẽ nở hoa. Thức\r\nThần trúng skill sẽ chịu hiệu ứng mê hoặc trong 1.1s', 'Bỉ Ngạn triệu hồi một vùng huyết hoa lập tức gây 200(+50% AP) sát thương\r\nphép mở rộng đồng thời liên tục gây 120 ( +30% AP) sát thương phép.\r\nTrong thời gian tồn tại biển hoa, kẻ địch đứng trong phạm vi ảnh hưởng sẽ\r\ngiảm20% tốc độ di chuyển.', 'Xuân Hộ Hoa', 'Tử Nhân Hoa', ' Hoa Ảnh Mê Hoặc', 'Biển Huyết Hoa', 'Thừa Phong', 's.jpg', 'thua-phong.png', 'xuan-ho-hoa.png', 'tu-nhan-hoa.png', 'hoa-anh-me-hoac.png', 'Bien-huyet-hoa.png', 'IMG_0862.png'),
+(23, 'Huệ Bỉ Thọ', 'Huệ Bỉ Thọ là một trong những Support có khả năng hồi phục mạnh mẽ bên cạnh đó ông mang độ khó tương đối tuy nhiêu không hề kén người chơi với độ bá đạo của ông.\r\n\r\n', 'Mỗi 1% MP bị mất sẽ tăng 2% hồi phục năng lượng', '\r\nEbisu ban phước lộc, hồi phục 22(+10% AP) Hp mỗi\r\n0,5s trong 3s.', 'Ebisu ném cần câu về hướng chỉ định, nếu trúng\r\nthức thần địch sẽ kéo 2 lần. Nếu không trúng, sẽ\r\nrơi vào trạng thái câu cá. Di chuyển hoặc sử dụng kỹ\r\nnăng sẽ làm gián đoạn việc đi câu.\r\n<br>\r\nNhấp 1 lần nữa sẽ thu dây, kéo kẻ địch trúng phải về\r\nbản thân đồng thời gây ra, 120(+50%AP) sát thương\r\nphép.', 'Ebisu gây ra 100 (+ 50% AP) sát thương phép lên kẻ\r\nđịch trước mặt đồng thời làm choáng mục tiêu.', 'Ebisu triệu hồi một lá cờ cá chép bảo vệ đồng minh\r\nxung quanh. Đồng minh tiến vào sẽ lập tức hồi 8%\r\nmáu, đồng thời hồi phục liên tục 30(+10% AP) HP\r\ntrên giây. Kỹ năng kéo dài 6.5s', 'Ngũ Phúc Lâm Môn', 'Nguyện Giả Thượng Câu', 'Họa Phúc Tương Kỳ', 'Cờ lý Ngư', 'Phúc Báo', 'hue-bi-tho-ebisu.png', 'phuc-bao.png', 'ngu-phuc-lam-mon.png', '5a3a30ba6f0494c343148410TTtoyz0I.png', 'hoa-phuc-tuong-ky.png', 'Ly-ngu-ky.png', 'aaa.jpg');
 
 -- --------------------------------------------------------
 
@@ -212,19 +215,22 @@ INSERT INTO `thucthan` (`id`, `name`, `truyenthuyet`, `noitai`, `skill1`, `skill
 
 CREATE TABLE `trangchu` (
   `id` int(10) NOT NULL,
-  `tieude` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tieude` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `mota` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `noidung` text COLLATE utf8mb4_unicode_ci,
-  `img` text COLLATE utf8mb4_unicode_ci
+  `img` text COLLATE utf8mb4_unicode_ci,
+  `time` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `trangchu`
 --
 
-INSERT INTO `trangchu` (`id`, `tieude`, `mota`, `noidung`, `img`) VALUES
-(1, 'Tướng mới xuất hiện', 'Theo như NESTEAT thì hôm này Tuyết đồng từ sẽ có mặt tại Heian', 'HAHAHAHA', '6.jpg'),
-(2, 'Onmyoji Arena - MOBA mới của NetEase đã cập bến ĐN', 'Sau những thành công nhất định mà Âm Dương Sư mang lại, NetEase Games đã quyết định tạo ra thêm cho ', 'Onmyoji Arena, tựa game MOBA dựa trên \"vũ trụ\" Onmyoji cuối cùng cũng chính thức ra mắt trên cả 2 nền tảng iOS và Android. Trò chơi của NetEase Games đã ra mắt tại Trung Quốc vào tháng 1 và cuối cùng mới tới Nhật Bản và ở thời điểm hiện tại là Đông Nam Á.', 'xa.jpg');
+INSERT INTO `trangchu` (`id`, `tieude`, `mota`, `noidung`, `img`, `time`) VALUES
+(1, 'Tướng mới xuất hiện', 'Hôm qua, NestEat game đã cho ra mắt tướng mới Kikyko', 'HAHAHAHA', '6.jpg', NULL),
+(2, 'Onmyoji Arena - MOBA mới của NetEase đã cập bến ĐN', 'Sau những thành công nhất định mà Âm Dương Sư mang lại, NetEase Games đã quyết định tạo ra thêm cho ', 'Onmyoji Arena, tựa game MOBA dựa trên \"vũ trụ\" Onmyoji cuối cùng cũng chính thức ra mắt trên cả 2 nền tảng iOS và Android. Trò chơi của NetEase Games đã ra mắt tại Trung Quốc vào tháng 1 và cuối cùng mới tới Nhật Bản và ở thời điểm hiện tại là Đông Nam Á.', 'xa.jpg', NULL),
+(3, 'Update OnmyojiArena | Thông tin cập nhập âm dương ', 'Chúng tôi sẽ thay đổi tướng giới hạn miễn phí trong ngày 30/11', 'Những vị tướng mới bao gồm:\r\n</br>\r\n Ebisu (Huệ Bỉ Thọ), Miketsu (Ngự Soạn Tân), Kuro (Hắc Quỷ Sứ), Yumekui (Thực Mộng Mô), Kiyohime (Thanh Cơ) , Ootengu (Đại Thiên Cẩu), Jikikaeru (Thanh Oa Từ Khí) , Kyonshi Ani (Khiêu Ca), và Puppeteer (Khôi Lõi Sư)\r\n</br>\r\nĐối với những thức thần như  Jikikaeru (Thanh Oa Từ Khí) , Kyonshi Ani (Khiêu Ca), và Puppeteer (Khôi Lõi Sư) có độ khó cao vì vậy người chơi có thời gian trải nghiệm thấp hơn 7 ngày sẽ không được phép sử dụng miễn phí.\r\n</br>\r\nĐiều chỉnh kỹ năng thức thần ( Demon Mod)\r\n</br>\r\nHakuro Bạch Lang\r\n</br>\r\nNội tại: Văn Xạ: Phạm vi cộng thêm lên đòn đánh thường của Hakuro khi lên cấp sẽ bị giảm\r\n</br>\r\nAoandon Thanh Hằng Đăng\r\n\r\nKỹ năng cuối: Bách Vật Ngữ Chi Quang: Thời gian làm choáng sẽ bị giảm\r\n</br>\r\nRyomen Lưỡng Diện Phật\r\n</br>\r\nKỹ năng cuối: Thần Tội Liên Kích:Tăng năng lượng tiêu hao và giảm thời gian hồi chiêu\r\n\r\nInuyasha Khuyển Dạ Xoa\r\n\r\nKỹ năng 1: Phong thương: Tăng số tầng tối đa có thể cộng dồn, khi sử dụng kỹ năng cuối để tấn công kẻ địch hiệu ứng này cũng sẽ được kích hoạt.\r\n</br>\r\nSatori Giác\r\n</br>\r\nNội tại: Bá Đạo: Giáp và kháng phép công thêm từ kỹ năng này sẽ được tăng, ngoài ra điểm hận thù nhận được từ kỹ năng cuối sẽ tăng.\r\n\r\nSamurai X Binh Dũng\r\n\r\nKỹ năng cuối: Diệp Ẩn Nộ: phần trăm phản sát thương lên kẻ địch sẽ được tăng', '003 - feZrWpX.jpg', NULL),
+(4, 'Rò Rỉ Thông Tin “Kikyo” Sẽ Xuất Hiện Trong Âm Dươn', 'Mới đây, có một số hình ảnh của Kikyo trong bộ truyện Inuyasha xuất hiện trong Âm Dương Sư bị rò rỉ trên một số trang mạng xã hội đang làm xôn xao cộng đồng người chơi, hãy cùng mình tìm hiểu xem chuy', 'Dành cho bạn nào không biết thì Kikyō (桔梗, ききょう) là một nhân vật trong loạt truyện manga và phim anime InuYasha của tác giả Takahashi Rumiko. \r\n</br> Cái tên \"Kikyo\" ngụ ý đến loài cây Cát cánh, một loài hoa mang ý nghĩa \"tình yêu vĩnh cửu\" trong văn hóa Nhật Bản.', '014 - WU5gsFz.jpg', NULL);
 
 -- --------------------------------------------------------
 
@@ -249,8 +255,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `fullname`, `createdate`, `is_block`, `permision`, `salt`) VALUES
-(6, 'admin', '123456', 'dft1711198@gmail.com', 'Đặng Văn Tuyến', '2018-11-30 08:56:14', 0, 2, NULL),
-(7, 'Thangml', '123456', '132165asd@gmail.com', 'Tạ Quang Thắng', '2018-11-30 09:19:21', 0, 1, NULL),
+(26, 'admin', 'e10adc3949ba59abbe56e057f20f883e', 'dft1711198@gmail.com', 'DangVanTUyen', '2019-01-01 11:33:37', 0, 2, NULL),
 (10, 'atnguyen30198', 'anhtu123', 'atnguyen30198@gmail.com', 'Nguyễn Anh Tú', '2018-12-06 09:42:53', 0, 1, NULL),
 (11, 'test', '$2y$12$prefix5c146bc761e781.ugWLPFTre9vaNsEoSIo3pm', '123456asd@gmail.com', '123465asd', '2018-12-15 09:49:43', 0, 1, 'Array'),
 (12, 'test2', '$2y$12$prefix5c146db7784877.u2FLNLzFRjsbq/QoYdZKCh', 'aaa@gmail.com', '123465asd', '2018-12-15 09:57:59', 0, 1, 'Array'),
@@ -261,7 +266,9 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `fullname`, `created
 (17, 'test6', '$2y$12$heXQIXkgiHX9OTA43FuurOYiRrazVDMNRM5DfEuDep1', '1a@gmail.com', 'a', '2018-12-15 10:49:46', 0, 1, NULL),
 (18, 'Thangml1', '$2y$10$Pig5.78xU6lMFhe54VzUjuGrOkvLdRq02GoPo0puosJ', 'aa1a@gmail.com', 'Thangml', '2018-12-15 10:51:55', 0, 1, NULL),
 (19, 'Thangml2', '$2y$10$I9LuD5s7c.pnymyUua2LlOYPiHaHTy.8uSyqWSlZ1is', '123456a2sd@gmail.com', '12', '2018-12-15 10:55:49', 0, 1, NULL),
-(24, 'test7', '123456', 'dft17111998@gmail.com', 'Đặng Thị Thú', '2018-12-15 18:25:35', 0, 1, NULL);
+(24, 'test7', '123456', 'dft17111998@gmail.com', 'Đặng Thị Thú', '2018-12-15 18:25:35', 0, 1, NULL),
+(25, 'addd', 'e10adc3949ba59abbe56e057f20f883e', '123456aasd@gmail.com', 'Thangml', '2019-01-01 11:30:55', 0, 1, NULL),
+(27, 'Thangml', 'e10adc3949ba59abbe56e057f20f883e', 'aaaee@gmail.com', 'Thangml', '2019-01-03 12:40:29', 0, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -306,7 +313,7 @@ INSERT INTO `vukhi` (`w_id`, `name`, `mota`, `loai`, `gia`, `name_noitai1`, `noi
 (6, 'Âm dương chuyển luân', '+35 sát thương vật lý\r\n+800 máu\r\n+100% hồi HP', 'C', '2000g', 'Băm nhỏ', 'Sau mỗi 2 giây đòn tấn công cận chiến sẽ gây thêm sát thương (25% máu tối đa) lên các mục tiêu trúng phải. Sát thương lên quái là 300%', '', '', '6.png'),
 (7, 'Kinh Mạn Đà Là', '+150 Phép, +100% Hồi Mp, +20% Giảm thời gian hồi chiêu', 'P', '1900G', 'Nội tại', 'Hồi phục 25% MP tiêu hao sau khi sử dụng chiêu thức', 'Nội tại', ' Hồi phục 20% MP tiêu hao sau khi hạ gục hoặc hội trợ tiêu diện thức thần địch', '7.png'),
 (8, 'Đàn Tam Thập Lục', '+110 Phép, 80 Giáp, +100% Hồi Mp', 'D', '1950G', 'Kích Hoạt', 'Bất tử 2.5 (90s CD)', '', '', '8.png'),
-(11, 'Ưng cung', '+45% tốc độ tấn công\r\n+25% chí mạng', 'C', '1750g', 'Đôi chân', '+7% tốc độ di chuyển', 'Nổi gió', 'đòn tấn công tầm xa sẽ nâng lên thành 3 mục tiêu cùng lúc, sát thương sẽ giảm 15% trên mỗi mục tiêu cộng thêm.', 'minh-cung.png');
+(11, 'Ưng Cung', '+45% tốc độ tấn công\r\n+25% chí mạng', 'C', '1750g', 'Đôi chân', '  +7% tốc độ di chuyển', 'Nổi gió', '  đòn tấn công tầm xa sẽ nâng lên thành 3 mục tiêu cùng lúc, sát thương sẽ giảm 15% trên mỗi mục tiêu cộng thêm.', 'minh-cung.png');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -384,7 +391,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT cho bảng `cmt`
 --
 ALTER TABLE `cmt`
-  MODIFY `cmt_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `cmt_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT cho bảng `posts`
@@ -396,19 +403,19 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT cho bảng `thucthan`
 --
 ALTER TABLE `thucthan`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT cho bảng `trangchu`
 --
 ALTER TABLE `trangchu`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT cho bảng `users1`
