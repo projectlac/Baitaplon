@@ -7,7 +7,7 @@
                     <ul>
                         <li><a href="DanhSachBaiPost">Bài Viết</a></li>
                         <li><a href="#">Hightlight</a></li>
-                        <li><a href="#">Tiêu Điểm Thức Thần</a></li>
+                        <li><a href="ThucThan.php">Tiêu Điểm Thức Thần</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 item text">
