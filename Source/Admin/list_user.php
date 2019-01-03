@@ -26,9 +26,9 @@ while($data= mysqli_fetch_array($result))
                 echo"<td>$data[username]</td>";
                 echo"<td>$data[email]</td>";
                 if($data['permision']==2){
-                echo"<td><a href='level_user.php?id=$data[id]'>Admin</a></td>"    ;} 
-                else {echo"<td><a href='level_user.php?id=$data[id]'>Thành Viên<a/></td>"; } 
-                echo"<td><a href='del_user.php?id=$data[id]' onclick='return xacnhan();'>Delete</a></td>";
+                echo"<td><a href='level_user.php?id=$data[id]'><img src='assets/img/edit.png' alt='xoa' width='15px;' height='15px;'/>Admin</a></td>"    ;} 
+                else {echo"<td><a href='level_user.php?id=$data[id]'> <img src='assets/img/edit.png' alt='xoa' width='15px;' height='15px;'/>Thành Viên<a/></td>"; } 
+                echo"<td><a href='del_user.php?id=$data[id]' onclick='return xacnhan();'><img src='assets/img/del.png' alt='xoa' width='15px;' height='15px;'/>Delete</a></td>";
                 echo"</tr>  "; 
 $stt++;
 };    
@@ -41,4 +41,4 @@ mysqli_close($conn);
 </body>
 </html>
 
-<?php include("../Footer.php")?>
+<?php include("Footer.php")?>

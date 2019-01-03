@@ -57,4 +57,4 @@ if(isset($_POST['ok'])){
 </div>
 </br>
 </br>
-<?php include('../Footer.php');?>
+<?php include('Footer.php');?>

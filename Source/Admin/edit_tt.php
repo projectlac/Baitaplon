@@ -208,4 +208,4 @@ mysqli_close($conn);
 </div>
 </br>
 
-<?php require('../Footer.php') ?>
+<?php require('Footer.php') ?>

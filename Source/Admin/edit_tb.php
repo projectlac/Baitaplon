@@ -120,8 +120,8 @@ mysqli_close($conn);
 </fieldset>
 
 
-
+</div>
 </div>
 </br>
 
-<?php require('../Footer.php') ?>
+<?php require('Footer.php') ?>

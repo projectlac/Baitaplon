@@ -29,11 +29,11 @@ while($data= mysqli_fetch_array($result))
             echo"<td>$data[name]</td>";
             echo"<td>$data[cmt]</td>";
             if($data['check1']=='N'){
-                echo "<td><a href='edit_cmt.php?id=$data[cmt_id]'>Không Ẩn<a></td>";}
+                echo "<td><a href='edit_cmt.php?id=$data[cmt_id]'><img src='assets/img/edit.png' alt='xoa' width='15px;' height='15px;'/>Không Ẩn<a></td>";}
             else{
-                echo"<td><a href='edit_cmt.php?id=$data[cmt_id]'>Ẩn<a></td>";
+                echo"<td><a href='edit_cmt.php?id=$data[cmt_id]'><img src='assets/img/edit.png' alt='xoa' width='15px;' height='15px;'/>Ẩn<a></td>";
             }
-            echo"<td><a href='del_cmt.php?id=$data[cmt_id]' onclick='return xacnhan();'>Delete</a></td>";
+            echo"<td><a href='del_cmt.php?id=$data[cmt_id]' onclick='return xacnhan();'><img src='assets/img/del.png' alt='xoa' width='15px;' height='15px;'/>Delete</a></td>";
             echo"</tr>"; 
 
   $stt++;          
@@ -46,4 +46,4 @@ while($data= mysqli_fetch_array($result))
 </body>
 </html>
 
-<?php include("../Footer.php")?>
+<?php include("Footer.php")?>

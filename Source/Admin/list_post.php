@@ -34,7 +34,7 @@ while($data= mysqli_fetch_array($result))
         echo "<td>$stt</td>";
         echo "<td>$data[title]</td>";
         echo "<td>$data[content]</td>";
-        echo "<td><a href='del_post.php?id=$data[id]' onclick='return xacnhan();'>Delete</a></td>";
+        echo "<td><a href='del_post.php?id=$data[id]' onclick='return xacnhan();'> <img src='assets/img/del.png' alt='xoa' width='15px;' height='15px;'/>Delete</a></td>";
         echo "</tr>"   ;
 $stt++;
 };    
@@ -47,4 +47,4 @@ mysqli_close($conn);
 </body>
 </html>
 
-<?php include("../Footer.php")?>
+<?php include("Footer.php")?>

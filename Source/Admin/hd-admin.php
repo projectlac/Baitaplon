@@ -56,7 +56,7 @@
 </head>
 <body>
 <div class="Ad">
-    <div id ="top"> <h3>Chào Admin, <a href="../DangXuat.php">Log out </a></h3></div>
+    <div id ="top"> <h3> <p>Chào Admin</p> <a href="../DangXuat.php">Log out </a></h3></div>
     <div id="menu"> 
     <ul>
     <li><a href="list_user.php"> Thành Viên</a></li>
@@ -66,3 +66,4 @@
     <li><a href="list_post.php"> Bài Viết</a></li>
     <li><a href="list_cmt.php"> Bình Luận</a></li>
     </ul></div>
+
