@@ -24,7 +24,7 @@ else {
 
 <div class="row">
     <div class="col-md-8"> 
-        <div class = "NenDanhSach">
+        <div class = "NenDanhSachpost">
 <h2 class="head" style="text-align:center">
             Danh Sách Bài Viết
 
@@ -49,6 +49,34 @@ foreach ($posts as $pts){
 ?>
 
 
+<div id="phantrang">
+
+<?php 
+$display=12;
+include("Include/connection.php");
+
+
+$sqlq="SELECT * FROM posts";
+$result=mysqli_query($conn,$sqlq);
+$sum1=mysqli_num_rows($result);
+
+$page=ceil($sum1/$display);
+    if($page>1){
+echo "<ul>";
+    
+for ($i = 1;$i<= $page; $i++)
+{
+$trang= ($i-1)*$display;
+    echo "<li><a href='DanhSachBaiPost.php?trang=$trang'>$i</a></li>";
+
+}
+
+echo "</ul>";
+};
+mysqli_close($conn);
+?>
+
+</div>
 </div>
 </div>
 
@@ -59,7 +87,7 @@ foreach ($posts as $pts){
             Tin mới
 
         </h2>
-        <?php include("mvc-trangchu.php") ?>
+        <?php include("mvc-tinmoi.php") ?>
 
         </div>
 	</div>

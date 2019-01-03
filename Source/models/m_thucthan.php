@@ -5,8 +5,19 @@ require_once("database.php");?>
 class M_thucthan extends database
 {
     public function doc_thuc_than()
-    {
-        $sql="Select * from thucthan";
+
+    { 
+        if(isset($_GET['trang'])){
+            $demm=$_GET['trang'];
+        }
+        else
+        {
+            $demm=0;
+
+        }
+
+        $tr=6;
+        $sql="Select * from thucthan order by id desc limit $demm,$tr";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }

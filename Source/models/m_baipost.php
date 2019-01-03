@@ -18,8 +18,18 @@ class M_baipost extends database
         return $this->loadRow($param);
     }
     public function doc_tat_ca_post()
-    {
-        $sql="Select * from posts" ;
+  { 
+        if(isset($_GET['trang'])){
+            $demm=$_GET['trang'];
+        }
+        else
+        {
+            $demm=0;
+
+        }
+
+        $tr=12;
+        $sql="Select * from posts order by createdate  desc limit $demm,$tr" ;
         $this->setQuery($sql);
         return $this->loadAllRows();
     }

@@ -5,8 +5,19 @@ require_once("database.php");?>
 class M_tintuc extends database
 {
     public function doc_tintuc()
-    {
-        $sql="Select * from trangchu";
+
+    { 
+        if(isset($_GET['trang'])){
+            $demm=$_GET['trang'];
+        }
+        else
+        {
+            $demm=0;
+
+        }
+
+        $hienthi=3;
+        $sql="Select * from trangchu order by id desc limit $demm,$hienthi";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
@@ -16,6 +27,15 @@ class M_tintuc extends database
         $this->setQuery($sql);
         $param = array($id);
         return $this->loadRow($param);
+    }
+     public function doc_tintuc_moi()
+
+   {
+
+
+        $sql="Select * from trangchu order by id desc limit 2";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
     }
 
 }

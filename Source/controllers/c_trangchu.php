@@ -18,6 +18,14 @@ class C_tintuc{
         //Views
         include("views/v_chitiettrangchu.php");
     }
+        public function hienthi_tintuc_ngan()
+    {
+        //Models
+        $m_tintuc = new M_tintuc();
+        $tt= $m_tintuc->doc_tintuc_moi();
+        //Views
+        include("views/v_tinmoi.php");
+    }
 }
 
 ?>
